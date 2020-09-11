@@ -14,7 +14,7 @@
 <body>
     <nav>
         <h1>NEWD</h1>
-      <a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a>  
+        <a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a>  
     </nav>
     <div class="container">
         <section>
@@ -29,6 +29,7 @@
         <section>
             <div class="img"></div>
         </section>
+        <div class="sombra"></div>
     </div>
     <div class="bag">
         <div class="caja">
@@ -211,7 +212,7 @@
                     x25=$altura>=9800,
                     y25=$altura<=12536,
                     x3=$altura>12536,
-                    y3=$altura<15000;
+                    y3=$altura<=15000;
 
                 if (x&&y) {
                     $mostrador.css('left', '0');

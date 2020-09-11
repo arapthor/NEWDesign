@@ -11,7 +11,7 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    height: auto;
+    height: 15000px;
 }
 nav{
     position: fixed;
@@ -23,20 +23,51 @@ nav{
     align-items: center;
     font-size: 25px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    padding: 17.5px 50px;
+    padding: 0px 50px;
     color: #fff;
     z-index: 15;
     mix-blend-mode: screen;
+}
+.container .sombra{
+    position: absolute;
+    height: 60px;
+    width: 200vw;
+    left: 200vw;
+    top: 0;
+    z-index: 14;
+    background: rgba(128, 128, 128, 0.5);
+    
+}
+nav h1{
+    margin: 17.5px 0;
+}
+nav a{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 0px 0;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+nav a:hover{
+    background: white;
+    transition: 0.3s;
 }
 nav a:hover i{
     color: black;
 }
 nav a i{
-    height: 100%;
-    width: 100%;
+    position: relative;
+    top: -2px;
+    left: 1px;
+    transform: scale(1.8) rotate(90deg);
     font-weight: 900;
     color: white;
-    transform: scale(2.8) rotate(90deg);
+    
 }
 .container{
     position: fixed;
@@ -52,6 +83,7 @@ section{
 }
 section:nth-child(1){
     background: url(../img/pexels-moose.jpg)no-repeat center center/cover;
+    filter: saturate(2.2);
 }
 section:nth-child(2){
     background: url(../img/pexels-paula.jpg)no-repeat center center/cover;
