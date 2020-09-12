@@ -238,3 +238,59 @@ p.firma{
     font-size: 13px;
     opacity: 0.8;
 }
+
+@media(max-width: 425px){
+    nav{
+        padding: 0 39px;
+    }
+    .bag .caja{
+        width: 80%;
+        top: 85px;
+    }
+    .bag .caja:nth-child(7){
+        top: 275px;
+    }
+    .bag .caja h1{
+        width: 100%;
+        padding-right: 0;
+    }
+    .bag .caja div.big:hover{
+        transform: none;
+    }
+    .bag .caja div.big h3{
+        left: -35px;
+        top: 15px;
+    }
+    .bag .caja div h3{
+        width: 72%;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        left: 5px;
+        top: 40px;
+    }
+    .bag .caja div:hover h3,.bag .caja div:hover article{
+        left: -15px;
+    }
+    .bag .caja:nth-child(2n+2){
+        height: 1120px;
+    }
+
+}
+@media(max-width: 375px){
+    .bag .caja h1{
+        font-size: 50px;
+        
+    }
+    .bag .caja div h3{
+        font-size: 14px;
+        padding: 5px 2px;
+        width: 65%;
+    }   
+        
+}
+@media(max-width: 320px){
+    .bag .caja div.big h3{
+        left: 5px;
+    }
+}

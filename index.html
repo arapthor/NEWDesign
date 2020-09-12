@@ -191,6 +191,7 @@
             var $win = $(window);
             var $mostrador = $('.container')
             var $altura = $win.scrollTop();
+            var $ancho = $win.width();
             
             $win.on('scroll', function () {
                 var $altura = $win.scrollTop();
@@ -222,29 +223,38 @@
                     $mostrador.css('left', porcentaje1);
                 }
                 else if (x1&&y1) {
-                    $mostrador.css('left', '-102%');
+                    if($ancho<=425){
+                        $mostrador.css('left', '-101%');
+                    }else{
+                        $mostrador.css('left', '-102%');
+                    }
                 }
                 else if(x15&&y15){
                     var porcentaje2=((-value*5.25)+(99.4)+'%')
                     $mostrador.css('left', porcentaje2);
                 }
                 else if(x2&&y2){
-                    $mostrador.css('left', '-202.5%');
+                    if($ancho<=425){
+                        $mostrador.css('left', '-201%');
+                    }else{
+                        $mostrador.css('left', '-202.5%');
+                    }
                 }
                 else if(x25&&y25){
                     var porcentaje3=((-value*5.25)+(154.9)+'%')
                     $mostrador.css('left', porcentaje3);
                 }
                 else if(x3&&y3){
-                    $mostrador.css('left', '-303.5%');
+                    if($ancho<=425){
+                        $mostrador.css('left', '-301.3%');
+                    }else{
+                        $mostrador.css('left', '-303.5%');
+                    }
                 }
                 else{
                     $mostrador.css('left', porcentaje);
                 }
-                
                 console.log($altura);
-                console.log(porcentaje);
-                
             })
         </script>
 
