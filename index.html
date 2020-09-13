@@ -211,8 +211,8 @@
                     x2=$altura>4320,
                     y2=$altura<5542.5,
                     x25=$altura>=5542.5,
-                    y25=$altura<=6480,
-                    x3=$altura>6480,
+                    y25=$altura<=6400,
+                    x3=$altura>6400,
                     y3=$altura<=7702.5;
 
                 if (x&&y) {
@@ -242,6 +242,7 @@
                 else{
                     $mostrador.css('left', '-303%');
                 }
+                console.log($altura);
             })
         </script>
 
