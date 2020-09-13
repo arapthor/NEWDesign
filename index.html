@@ -198,63 +198,50 @@
                 var dh = $(document).height();
                 var wh = $(window).height();
                 var value = ($altura/(dh-wh))*100;
-                var porcentaje=(- value * 5.25 + '%');                  
+                var porcentaje=(- value * 9 + '%');                  
         
                 var x=$altura>=0,
-                    y=$altura<1333,
-                    x05=$altura>=1333,
-                    y05=$altura<=4107,
-                    x1=$altura>4107,
-                    y1=$altura<5507,
-                    x15=$altura>=5507,
-                    y15=$altura<=8267,
-                    x2=$altura>8267,
-                    y2=$altura<9800,
-                    x25=$altura>=9800,
-                    y25=$altura<=12536,
-                    x3=$altura>12536,
-                    y3=$altura<=15000;
+                    y=$altura<1222.5,
+                    x05=$altura>=1222.5,
+                    y05=$altura<=2160,
+                    x1=$altura>2160,
+                    y1=$altura<3382.5,
+                    x15=$altura>=3382.5,
+                    y15=$altura<=4320,
+                    x2=$altura>4320,
+                    y2=$altura<5542.5,
+                    x25=$altura>=5542.5,
+                    y25=$altura<=6480,
+                    x3=$altura>6480,
+                    y3=$altura<=7702.5;
 
                 if (x&&y) {
                     $mostrador.css('left', '0');
                 }
                 else if(x05&&y05){
-                    var porcentaje1=((-value*5.25)+(48.75)+'%')
+                    var porcentaje1=((-value* 9)+(46)*3+'%')
                     $mostrador.css('left', porcentaje1);
                 }
                 else if (x1&&y1) {
-                    if($ancho<=425){
-                        $mostrador.css('left', '-101%');
-                    }else{
-                        $mostrador.css('left', '-102%');
-                    }
+                    $mostrador.css('left', '-102%');
                 }
                 else if(x15&&y15){
-                    var porcentaje2=((-value*5.25)+(99.4)+'%')
+                    var porcentaje2=((-value* 9)+(92)*3+'%')
                     $mostrador.css('left', porcentaje2);
                 }
                 else if(x2&&y2){
-                    if($ancho<=425){
-                        $mostrador.css('left', '-201%');
-                    }else{
-                        $mostrador.css('left', '-202.5%');
-                    }
+                    $mostrador.css('left', '-202.5%');
                 }
                 else if(x25&&y25){
-                    var porcentaje3=((-value*5.25)+(154.9)+'%')
+                    var porcentaje3=((-value* 9)+(138)*3+'%')
                     $mostrador.css('left', porcentaje3);
                 }
                 else if(x3&&y3){
-                    if($ancho<=425){
-                        $mostrador.css('left', '-301.3%');
-                    }else{
-                        $mostrador.css('left', '-303.5%');
-                    }
+                    $mostrador.css('left', '-303%');
                 }
                 else{
-                    $mostrador.css('left', porcentaje);
+                    $mostrador.css('left', '-303%');
                 }
-                console.log($altura);
             })
         </script>
 
