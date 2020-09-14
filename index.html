@@ -192,7 +192,7 @@
             var $mostrador = $('.container')
             var $altura = $win.scrollTop();
             var $ancho = $win.width();
-            
+                
             $win.on('scroll', function () {
                 var $altura = $win.scrollTop();
                 var dh = $(document).height();
@@ -203,48 +203,46 @@
                 var x=$altura>=0,
                     y=$altura<1222.5,
                     x05=$altura>=1222.5,
-                    y05=$altura<=2160,
-                    x1=$altura>2160,
+                    y05=$altura<=2130,
+                    x1=$altura>2130,
                     y1=$altura<3382.5,
                     x15=$altura>=3382.5,
-                    y15=$altura<=4320,
-                    x2=$altura>4320,
+                    y15=$altura<=4265,
+                    x2=$altura>4265,
                     y2=$altura<5542.5,
                     x25=$altura>=5542.5,
-                    y25=$altura<=6400,
-                    x3=$altura>6400,
+                    y25=$altura<=6370,
+                    x3=$altura>6370,
                     y3=$altura<=7702.5;
 
                 if (x&&y) {
                     $mostrador.css('left', '0');
                 }
                 else if(x05&&y05){
-                    var porcentaje1=((-value* 9)+(46)*3+'%')
+                    var porcentaje1=((-value* 9)+(45.8)*3+'%')
                     $mostrador.css('left', porcentaje1);
                 }
                 else if (x1&&y1) {
-                    $mostrador.css('left', '-102%');
+                    $mostrador.css('left', '-100vw');
                 }
                 else if(x15&&y15){
                     var porcentaje2=((-value* 9)+(92)*3+'%')
                     $mostrador.css('left', porcentaje2);
                 }
                 else if(x2&&y2){
-                    $mostrador.css('left', '-202.5%');
+                    $mostrador.css('left', '-200vw');
                 }
                 else if(x25&&y25){
                     var porcentaje3=((-value* 9)+(138)*3+'%')
                     $mostrador.css('left', porcentaje3);
                 }
                 else if(x3&&y3){
-                    $mostrador.css('left', '-303%');
+                    $mostrador.css('left', '-300vw');
                 }
                 else{
-                    $mostrador.css('left', '-303%');
+                    $mostrador.css('left', '-300vw');
                 }
                 console.log($altura);
-                console.log(dh);
-                console.log(wh);
             })
         </script>
 
