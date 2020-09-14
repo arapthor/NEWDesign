@@ -197,7 +197,7 @@
                 var $altura = $win.scrollTop();
                 var dh = $(document).height();
                 var wh = $(window).height();
-                var value = ($altura/(dh-wh))*100;
+                var value = ($altura/8015)*100;
                 var porcentaje=(- value * 9 + '%');                  
         
                 var x=$altura>=0,
@@ -243,6 +243,8 @@
                     $mostrador.css('left', '-303%');
                 }
                 console.log($altura);
+                console.log(dh);
+                console.log(wh);
             })
         </script>
 
