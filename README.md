@@ -1,2 +1,2 @@
 # NEWDesign
-Diseño web - Horzontal scrolling
+Diseño web - Horizontal scrolling
