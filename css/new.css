@@ -248,6 +248,9 @@ p.firma{
         width: 100%;
         padding-right: 0;
     }
+    .bag .caja:nth-child(2) h1,.bag .caja:nth-child(3) h1{
+        top: -300px;
+    }
     .bag .caja div.big:hover{
         transform: none;
     }
@@ -268,10 +271,7 @@ p.firma{
     }
 
 }
-@media(max-width:414px){
-    .bag .caja:nth-child(2) h1,.bag .caja:nth-child(3) h1{
-        top: -300px;
-    }
+    
 }
 @media(max-width: 375px){
     .bag .caja h1{
