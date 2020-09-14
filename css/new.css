@@ -109,10 +109,6 @@ section:nth-child(4){
     gap: 15px;
     margin: 50vh 0 150vh 0;
 }
-.bag .caja:nth-child(2n+2){
-    height: 890px;
-    display: none;
-}
 .bag .caja h1{
     position: absolute;
     color: rgb(122, 122, 122);
@@ -233,7 +229,7 @@ p.firma{
     left: 20px;
     bottom: 0;
     padding: 20px;
-    color: white;
+    color: rgb(253, 252, 252);
     font-family: sans-serif;
     font-weight: 500;
     font-size: 13px;
@@ -247,9 +243,6 @@ p.firma{
     .bag .caja{
         width: 80%;
         top: 85px;
-    }
-    .bag .caja:nth-child(7){
-        top: 275px;
     }
     .bag .caja h1{
         width: 100%;
@@ -273,10 +266,12 @@ p.firma{
     .bag .caja div:hover h3,.bag .caja div:hover article{
         left: -15px;
     }
-    .bag .caja:nth-child(2n+2){
-        height: 1120px;
-    }
 
+}
+@media(max-width:414px){
+    .bag .caja:nth-child(2) h1,.bag .caja:nth-child(3) h1{
+        top: -300px;
+    }
 }
 @media(max-width: 375px){
     .bag .caja h1{
